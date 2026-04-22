@@ -1,0 +1,71 @@
+{
+  // VivaClaw — Vivado Automation Agent
+  // OpenClaw workspace configuration
+  // Place this file at: ~/.openclaw/agents/vivaclaw/openclaw.json
+  // or in your workspace root as openclaw.json
+
+  "agents": {
+    "list": [
+      {
+        "id": "vivaclaw",
+        "workspace": "~/.openclaw/agents/vivaclaw/workspace",
+        "agentDir": "~/.openclaw/agents/vivaclaw/agent",
+        "description": "Vivado FPGA design automation agent"
+      }
+    ]
+  },
+
+  "skills": {
+    "load": {
+      "watch": true,
+      "watchDebounceMs": 250
+    },
+    "entries": {
+      "vivado-flow":        { "enabled": true },
+      "vivado-timing":      { "enabled": true },
+      "vivado-synth":       { "enabled": true },
+      "vivado-cdc":         { "enabled": true },
+      "vivado-constraints": { "enabled": true },
+      "vivado-power":       { "enabled": true },
+      "vivado-reports":     { "enabled": true },
+      "vivado-debug":       { "enabled": true },
+      "vivado-sim":         { "enabled": true },
+      "vivado-ip":          { "enabled": true },
+      "vivado-floorplan":   { "enabled": true }
+    }
+  },
+
+  "model": {
+    "provider": "anthropic",
+    "model":    "claude-opus-4-5"
+  },
+
+  "tools": {
+    "shell": {
+      "enabled": true,
+      "timeout": 3600000,
+      "allowedCommands": [
+        "vivado",
+        "xvlog",
+        "xvhdl",
+        "xelab",
+        "xsim",
+        "grep",
+        "cat",
+        "ls",
+        "mkdir",
+        "cp",
+        "mv",
+        "echo",
+        "tee",
+        "awk",
+        "sed",
+        "find",
+        "diff"
+      ]
+    },
+    "read_file":  { "enabled": true },
+    "write_file": { "enabled": true },
+    "browser":    { "enabled": false }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "model": {
+    "provider": "anthropic",
+    "model": "claude-3-5-sonnet-latest"
+  },
+  "tools": {
+    "shell": {
+      "enabled": true,
+      "timeout": 7200000,
+      "allowedCommands": [
+        "vivado", "xvlog", "xvhdl", "xelab", "xsim",
+        "grep", "awk", "sed", "cat", "ls", "find",
+        "mkdir", "cp", "mv", "echo", "tee", "diff",
+        "wc", "head", "tail", "sort", "uniq"
+      ]
+    },
+    "read_file":  { "enabled": true },
+    "write_file": { "enabled": true },
+    "browser":    { "enabled": false }
+  },
+  "skills": {
+    "load": {
+      "watch": true,
+      "watchDebounceMs": 250
+    },
+    "entries": {
+      "vivado-flow":        { "enabled": true },
+      "vivado-timing":      { "enabled": true },
+      "vivado-synth":       { "enabled": true },
+      "vivado-impl":        { "enabled": true },
+      "vivado-cdc":         { "enabled": true },
+      "vivado-constraints": { "enabled": true },
+      "vivado-power":       { "enabled": true },
+      "vivado-reports":     { "enabled": true },
+      "vivado-debug":       { "enabled": true },
+      "vivado-sim":         { "enabled": true },
+      "vivado-ip":          { "enabled": true },
+      "vivado-floorplan":   { "enabled": true }
+    }
+  }
+}

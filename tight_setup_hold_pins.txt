@@ -1,0 +1,12 @@
++====================+===================+==================+
+| Launch Setup Clock | Launch Hold Clock | Pin              |
++====================+===================+==================+
+| clk1               | clk1              | out_reg_reg[6]/D |
+| clk1               | clk1              | out_reg_reg[2]/D |
+| clk1               | clk1              | out_reg_reg[4]/D |
+| clk1               | clk1              | out_reg_reg[3]/D |
+| clk1               | clk1              | out_reg_reg[5]/D |
+| clk1               | clk1              | out_reg_reg[1]/D |
+| clk1               | clk1              | out_reg_reg[0]/D |
+| clk1               | clk1              | out_reg_reg[7]/D |
++--------------------+-------------------+------------------+

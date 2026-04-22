@@ -1,0 +1,27 @@
+# Vivado Temporary Files
+*.log
+*.jou
+*.pb
+*.dcp
+*.bit
+*.ltx
+*.xml
+*.html
+.Xil/
+vivado*.str
+
+# OpenClaw Local State
+memory/
+agent/
+sessions/
+auth-profiles.json
+*.new
+*.bak*
+
+# OS/IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Benchmarks Source (Optional: keep if you want them in the repo)
+# benchmarks/itc99_repo/
